@@ -1,0 +1,35 @@
+footer{
+  height: 50px;
+  background-color: #ddd;
+  padding: 10px;
+}
+footer a{
+  color: #6699ff;
+  display: block;
+}
+
+.animate-box{
+  padding: 10px;
+  background-color: #eee;
+  animation: movediv 3s infinite alternate;
+  position: relative;
+  opacity:0.8;
+}
+@keyframes movediv{
+    0% {
+      top: 0;
+      transform: rotate(0);
+    }
+    50% {
+      top: 50%;
+      transform: rotate(20deg);
+    }
+    100%{
+      top: 100%;
+      transform: rotate(0);
+    };
+}
+@-webkit-keyframes movediv{
+    0%{color: red;}
+    100%{color: blue;};
+}
