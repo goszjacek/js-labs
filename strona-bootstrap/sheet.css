@@ -1,0 +1,73 @@
+aside  {
+    width: 50%;
+    
+    float: right;
+}
+footer {
+    width: 100%;
+}      
+header {
+    width: 100%;
+}    
+    
+main { 
+    width: 40%;
+    overflow: auto;
+}
+
+main > h1{
+    animation: coloring 1s infinite alternate; 
+    -webkit-animation: coloring 1s infinite alternate;
+}
+@keyframes coloring{
+    from{color: red;}
+    to{color: blue;};
+}
+@-webkit-keyframes coloring{
+    from{color: red;}
+    to{color: blue;};
+}
+nav {
+    width: 10%;   
+    
+}
+.wrapper {
+    display:inline;
+}
+nav ul {
+/* Specyfikacja wyglądu / Specification of the appearance */
+display: inline; 
+}
+nav li {
+/* Specyfikacja wyglądu / Specification of the appearance */
+}
+
+pre{}
+h1{
+    display:inline;
+}
+.azure{
+    background-color: #e9ffff;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;   
+    margin: 5px;
+}
+
+.padding-space{
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+@media screen and (max-width: 768px) {
+	header > h1{
+        color: blue;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	header > h1{
+        color: red;
+    }
+}
